@@ -1,0 +1,15 @@
+:root {
+    --bullet-color: blue; /* Define a CSS variable for the bullet color */
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li:before {
+    content: '\2022'; /* Use the bullet point character */
+    color: var(--bullet-color); /* Use the CSS variable for the bullet color */
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
